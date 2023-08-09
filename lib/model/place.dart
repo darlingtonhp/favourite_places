@@ -9,5 +9,6 @@ class Place {
   final String title;
   final File image;
 
-  Place({required this.image, required this.title}) : id = uuid.v4();
+  Place({String? id, required this.image, required this.title})
+      : id = id ?? uuid.v4();
 }
